@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Click to Redirect to Project
-description: with no page entry here
-redirect: https://unsplash.com
+title: CV
+description: CV
+redirect: https://github.com/CamilaDuitama/gradfolio/raw/master/assets/images/DuitamaCamila_CV.pdf
 ---
