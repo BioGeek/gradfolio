@@ -1,11 +1,11 @@
 ### your site title here
 
-title: Your Name
-description: subtitle | affiliations | motto
+title: Camila Duitama González
+description: PhD student | Institut Pasteur / Sorbonne Université | Machine Learning for metagenomics
 
 baseurl: /gradfolio #name of GitHub repository
 url: "" #custom url to be used instead of GitHub repository
-email: #
+email: camiladuitama@gmail.com
 
 
 highlighter: rouge
