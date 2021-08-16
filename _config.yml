@@ -17,9 +17,9 @@ permalink: /blog/:year/:title/
 paginate_path: /blog/page:num/
 
 # Social media links in footer
-twitter: https://twitter.com/camiladuitama1
-linkedin: https://www.linkedin.com/in/camiladuitama/
-github: https://github.com/CamilaDuitama
+twitter: "https://twitter.com/camiladuitama1"
+linkedin: "https://www.linkedin.com/in/camiladuitama/"
+github: "https://github.com/CamilaDuitama"
 
 highlighter: rouge
 markdown: kramdown
