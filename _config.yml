@@ -1,9 +1,9 @@
 ### your site title here
 
 title: Camila Duitama González
-description: PhD student | Institut Pasteur / Sorbonne Université | Machine Learning for metagenomics
+description: PhD student | Institut Pasteur / Sorbonne Université | ML for metagenomics
 
-baseurl: /gradfolio #name of GitHub repository
+baseurl: CamilaDuitama/gradfolio #name of GitHub repository
 url: "" #custom url to be used instead of GitHub repository
 email: camiladuitama@gmail.com
 
