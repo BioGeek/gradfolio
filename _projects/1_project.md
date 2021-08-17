@@ -1,4 +1,4 @@
-f---
+---
 layout: post
 title: Master thesis
 description: Validation of GBM cancer subtypes using Bayesian Clustering
