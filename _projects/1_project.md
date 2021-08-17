@@ -1,152 +1,36 @@
----
+f---
 layout: post
 title: Master thesis
 description: Validation of GBM cancer subtypes using Bayesian Clustering
 ---
-Example modified from [here](http://www.unexpected-vortices.com/sw/rippledoc/quick-markdown-example.html){:target="_blank"}.
+I did my master thesis under the supervision of Dr. Holger Fröhlich and [Dr. Ashar Ahmad](https://www.linkedin.com/in/ashar-ahmad-phd/) at the University of Bonn in Germany. 
 
-H1 Header
+Master thesis: 
 ============
 
-Paragraphs are separated by a blank line.
+The Survival Based Bayesian Clustering (SBC) model developed by Ahmad and Fröhlich (2017), infers clinically relevant cancer subtypes, by jointly clustering molecular data along with survival data. Originally, the model was tested on a a Breast Cancer (Van De Vijver et al., 2002) and a Glioblastoma Multiforme (GBM) (Verhaak et al., 2010) data set, without any further external validation. The objective of this master thesis was to perform an external validation of the SBC, a goal that entailed two major tasks: a rigorous feature engineering and selection process that improved the known predictive ability of the model, and the characterisation of the obtained clusters and corresponding signature by delving into other types of clinical and omics data such as Copy Number Variation and miRNA.
 
-2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
-look like:
+The TCGA-GBM data set was retrieved using the Bioconductor package RTCGAToolbox and after data preprocessing, appropriate normalisation and correction for sample selection bias, a combined patient cohort of 421 samples was obtained (160 patients for the training and 261 patients for the validation set). Various feature engineering and selection techniques were explored. Every SBC model fit was done using Gibbs sampling. The best feature engineering and selection approaches were the Block HSIC-Lasso model for mRNA-based selection and a Penalized Accelerated Failure Time model on a collection of oncogenic gene sets for pathway-based selection. In both cases there was an improvement of the initial Predictive C-Index (Block HSIC-Lasso feature selection = +1.5%, PAFT feature selection = +27.6%) and Recovery C-Index (Block HSIC-Lasso feature selection = +8.7%, PAFT feature selection = +5.0%). 
 
-  * this one
-  * that one
-  * the other one
-
-Note that --- not considering the asterisk --- the actual text
-content starts at 4-columns in.
-
-> Block quotes are
-> written like so.
->
-> They can span multiple paragraphs,
-> if you like.
-
-Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
-in chapters 12--14"). Three dots ... will be converted to an ellipsis.
-Unicode is supported. ☺
+The work done in this master thesis is a step forward in the validation of the SBC model on an external data set such as the TCGA-GBM patient cohort.
 
 
-H2 Header
+Background:
 ------------
 
-Here's a numbered list:
+The background of this master thesis is the SBC, a model that infers clinically relevant cancer subtypes, by jointly clustering molecular data along with survival datain a semi-supervised manner.The original paper and the supplementary material are on pdf version in this repository inside the folder called [papers](/papers/). A graphical representation of the model is this:
 
- 1. first item
- 2. second item
- 3. third item
+![SBC](assets/images/Graphical_model_SBC.png)
 
-Note again how the actual text starts at 4 columns in (4 characters
-from the left side). Here's a code sample:
-
-    # Let me re-iterate ...
-    for i in 1 .. 10 { do-something(i) }
-
-As you probably guessed, indented 4 spaces. By the way, instead of
-indenting the block, you can use delimited blocks, if you like:
-
-~~~
-define foobar() {
-    print "Welcome to flavor country!";
-}
-~~~
-
-(which makes copying & pasting easier). You can optionally mark the
-delimited block for Pandoc to syntax highlight it:
-
-~~~python
-import time
-# Quick, count to ten!
-for i in range(10):
-    # (but not *too* quick)
-    time.sleep(0.5)
-    print(i)
-~~~
+SBC's main features are:
+- Fully bayesian approach as omics data contains a lot of noise with p >> n.
+- Dirichlet Process prior to automatically infer the number of clusters.
+- Molecular Data modelled as a Hierarchical Multivariate Gaussian Distribution (Mixture model).
+- Survival time is modelled as Log-linear (Accelerated Failure Time) distribution with molecular covariates (Mixture model).
+- L-1 regularization for the covariates of the Survival Model (Bayesian Lasso).
 
 
+Written document:
+------------
 
-### An h3 header ###
-
-Now a nested list:
-
- 1. First, get these ingredients:
-
-      * carrots
-      * celery
-      * lentils
-
- 2. Boil some water.
-
- 3. Dump everything in the pot and follow
-    this algorithm:
-
-        find wooden spoon
-        uncover pot
-        stir
-        cover pot
-        balance wooden spoon precariously on pot handle
-        wait 10 minutes
-        goto first step (or shut off burner when done)
-
-    Do not bump wooden spoon or it will fall.
-
-Notice again how text always lines up on 4-space indents (including
-that last line which continues item 3 above).
-
-Here's a link to [a website](http://foo.bar), to a [local
-doc](local-doc.html), and to a [section heading in the current
-doc](#an-h2-header). Here's a footnote [^1].
-
-[^1]: Some footnote text.
-
-Tables can look like this:
-
-| Header 1 | Header 2                   | Header 3 |
-|:--------:|:--------------------------:|:--------:|
-| data1a   | Data is longer than header | 1        |
-| d1b      | add a cell                 |          |
-| lorem    | ipsum                      | 3        |
-|          | empty outside cells        |          |
-| skip     |                            | 5        |
-| six      | Morbi purus                | 6        |
-
-
-A horizontal rule follows.
-
-***
-
-Here's a definition list:
-
-apples
-  : Good for making applesauce.
-
-oranges
-  : Citrus!
-
-tomatoes
-  : There's no "e" in tomatoe.
-
-Again, text is indented 4 spaces. (Put a blank line between each
-term and  its definition to spread things out more.)
-
-Here's a "line block" (note how whitespace is honored):
-
-| Line one
-|   Line too
-| Line tree
-
-and images can be specified like so:
-
-![example image](https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop "An exemplary image")
-
-Inline math equation: $\omega = d\phi / dt$. Display
-math should get its own line like so:
-
-$$I = \int \rho R^{2} dV$$
-
-And note that you can backslash-escape any punctuation characters
-which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.
+If you would like to read my master thesis click [here](https://github.com/CamilaDuitama/MasterThesis/raw/master/Master%20thesis%20final%20version.pdf)
