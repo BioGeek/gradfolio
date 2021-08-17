@@ -39,7 +39,7 @@ by delving into other types of clinical and omics data such as Copy Number Varia
 The TCGA-GBM data set was retrieved using the Bioconductor package RTCGAToolbox and after data preprocessing, appropriate normalisation and correction for
 sample selection bias, a combined patient cohort of 421 samples was obtained (160 patients for the training and 261 patients for the validation set).
 Various feature engineering and selection techniques were explored. Every SBC model fit was done using Gibbs sampling. The best feature engineering and
-selection approaches were the [Block HSIC-Lasso](https://camiladuitama.github.io/MasterThesis/HSIC-Lasso-Regression.html) (Climente-Gonz alez et al., 2019)
+selection approaches were the [Block HSIC-Lasso](https://camiladuitama.github.io/MasterThesis/HSIC-Lasso-Regression.html) (Climente-González et al., 2019)
 model for mRNA-based selection and a [Penalized Accelerated Failure Time (PAFT)](https://camiladuitama.github.io/MasterThesis/OncogenicGeneSets+PAFT.html)
 model on a collection of oncogenic gene sets for pathway-based selection. In both cases there was an improvement of the initial Predictive C-Index
 (Block HSIC-Lasso feature selection = +1.5%, PAFT feature selection = +27.6%) and Recovery C-Index (Block HSIC-Lasso feature selection = +8.7%,
