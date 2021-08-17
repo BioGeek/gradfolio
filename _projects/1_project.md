@@ -3,7 +3,12 @@ layout: post
 title: Master thesis
 description: Validation of GBM cancer subtypes using Bayesian Clustering
 ---
-I did my master thesis under the supervision of Dr. Holger Fröhlich and [Dr. Ashar Ahmad](https://www.linkedin.com/in/ashar-ahmad-phd/) at the University of Bonn in Germany. 
+I did my master thesis under the supervision of Dr. Holger Fröhlich and [Dr. Ashar Ahmad](https://www.linkedin.com/in/ashar-ahmad-phd/) at the University of Bonn in Germany.
+
+I presented the results of my master thesis at the following venues:
+* (3rd Data Science Summer School at the Ecole Polytechnique - Paris, France - June 2019)[https://2019.ds3-datascience-polytechnique.fr/posters/]
+* (First Latin American Meeting on AI: KHIPU - Montevideo, Uruguary - November 2019)[https://khipu.ai/2019event/]
+* (AI Latin American Summit at the MIT Media Lab - Cambridge, USA - January 2020)
 
 Master thesis: 
 ============
