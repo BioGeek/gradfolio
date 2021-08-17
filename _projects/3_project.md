@@ -2,5 +2,5 @@
 layout: post
 title: CV
 description: CV
-redirect: https://github.com/CamilaDuitama/gradfolio/raw/master/assets/images/DuitamaCamila_CV.pdf
+redirect: https://drive.google.com/file/d/1WSqBxM1-ojPd5d9gZb-nk4l59RH9przm/view?usp=sharing
 ---
