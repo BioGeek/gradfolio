@@ -9,7 +9,7 @@ published: true
 
 I am Camila Duitama González, a PhD Student in the [Sequence Bioinformatics](https://research.pasteur.fr/en/team/sequence-bioinformatics/)
 group from Institut Pasteur under the supervision of [Dr. Rayan Chikhi](http://rayan.chikhi.name) and [Dr. Hugues Richard](http://www.lgm.upmc.fr/hrichard/).
-I am currently working in the decontamination of ancient metagenomic data using machine learning applied to k-mer profiles.
+I am currently working in the decontamination of ancient metagenomic data using machine learning applied to k-mer profiles. My job is funded by the Pairis AI Research Institute [(PRAIRIE)](https://prairie-institute.fr/about-us/)
 
 I did a MSc in Life Science Informatics at the Rhenish Friedrich Wilhelm University of Bonn and a B. Eng in Biological Engineering at the Universidad Nacional
 de Colombia.
