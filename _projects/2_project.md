@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Internships/Assistanships 
-
 description: Experience in other research groups
 ---
 
