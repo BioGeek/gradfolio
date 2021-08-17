@@ -14,9 +14,10 @@ I presented the results of my master thesis at the following venues:
 Background:
 ------------
 
-The background of this master thesis is the SBC, a model that infers clinically relevant cancer subtypes, by jointly clustering molecular data along with survival datain a semi-supervised manner.A graphical representation of the model is this:
+The background of this master thesis is the Survival Based Bayesian Clustering (SBC) model developed by [Ahmad and Fröhlich (2017)](https://pubmed.ncbi.nlm.nih.gov/28961917/), a model that infers clinically relevant cancer subtypes,
+by jointly clustering molecular data along with survival datain a semi-supervised manner. A graphical representation of the model is this:
 
-![SBC](https://github.com/CamilaDuitama/gradfolio/raw/master/assets/images/Graphical_model_SBC.png)
+![SBC](https://raw.githubusercontent.com/CamilaDuitama/MasterThesis/master/images/Graphical_model_SBC.png)
 
 SBC's main features are:
 - Fully bayesian approach as omics data contains a lot of noise with p >> n.
@@ -29,8 +30,7 @@ SBC's main features are:
 Abstract:
 ------------
 
-The Survival Based Bayesian Clustering (SBC) model developed by [Ahmad and Fröhlich (2017)](https://pubmed.ncbi.nlm.nih.gov/28961917/),
-infers clinically relevant cancer subtypes, by jointly clustering molecular data along with survival data. Originally, the model was tested on a a
+The SBC infers clinically relevant cancer subtypes, by jointly clustering molecular data along with survival data. Originally, the model was tested on a a
 Breast Cancer (Van De Vijver et al., 2002) and a Glioblastoma Multiforme (GBM) (Verhaak et al., 2010) data set, without any further external validation.
 The objective of this master thesis was to perform an external validation of the SBC, a goal that entailed two major tasks: a rigorous feature engineering
 and selection process that improved the known predictive ability of the model, and the characterisation of the obtained clusters and corresponding signature
