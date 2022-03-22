@@ -15,7 +15,7 @@ Background:
 ------------
 
 The background of this master thesis is the Survival Based Bayesian Clustering (SBC) model developed by [Ahmad and Fröhlich (2017)](https://pubmed.ncbi.nlm.nih.gov/28961917/), a model that infers clinically relevant cancer subtypes,
-by jointly clustering molecular data along with survival datain a semi-supervised manner. A graphical representation of the model is this:
+by jointly clustering molecular data along with survival data in a semi-supervised manner. A graphical representation of the model is this:
 
 ![SBC](https://raw.githubusercontent.com/CamilaDuitama/MasterThesis/master/images/Graphical_model_SBC.png)
 
